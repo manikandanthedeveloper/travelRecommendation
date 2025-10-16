@@ -1,0 +1,408 @@
+/* Navbar styles */
+.navbar {
+    background-color: #0b3a38;
+}
+
+.navbar-brand {
+    font-family: "Georgia", serif;
+    font-style: italic;
+    font-weight: bold;
+    color: #fff !important;
+}
+
+.navbar-nav .nav-link {
+    color: #fff !important;
+    font-weight: 600;
+    margin-right: 15px;
+}
+
+.navbar-nav .nav-link:hover {
+    text-decoration: underline;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #fff;
+    padding: 5px 15px;
+    border-radius: 30px;
+}
+
+.search-box input {
+    border-radius: 5px;
+    padding: 8px;
+    width: 260px;
+    border: none !important;
+    color: #007575;
+}
+
+.search-box input:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.btn-search,
+.btn-clear,
+.btn-visit {
+    border-radius: 5px;
+    padding: 6px 16px;
+    font-weight: 500;
+    background-color: #007575;
+    color: white;
+    border: none;
+}
+
+.btn-clear {
+    background-color: #007575;
+    margin-left: 5px;
+}
+
+.btn-search:hover,
+.btn-clear:hover,
+.btn-visit:hover {
+    background-color: #009e9a;
+    color: #fff;
+}
+
+/* Background section */
+.hero-section {
+    position: relative;
+    background: url('https://images.unsplash.com/photo-1505761671935-60b3a7427bad?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 0 80px;
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 50, 50, 0.5);
+    z-index: 0;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 600px;
+    left: 30px;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 1.1;
+}
+
+.hero-content p {
+    margin: 20px 0;
+    font-size: 1.1rem;
+    color: #d0e0e0;
+}
+
+.btn-book {
+    background-color: #0a7068;
+    border: none;
+    color: white;
+    font-weight: 600;
+    padding: 10px 28px;
+    border-radius: 5px;
+}
+
+.btn-book:hover {
+    background-color: #0c9085;
+}
+
+/* White line */
+.left-line {
+    position: absolute;
+    top: 80px;
+    left: 35px;
+    width: 1px;
+    height: 200px;
+    background-color: #ffffff;
+    z-index: 2;
+    opacity: 0.8;
+}
+
+/* Social media vertical bar */
+.social-icons {
+    position: absolute;
+    top: 60%;
+    left: 20px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    z-index: 2;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 1.3rem;
+    transition: 0.3s;
+    width: 20px;
+    height: 20px;
+}
+
+.social-icons a:hover {
+    color: #00bfa6;
+}
+
+/* Background Section */
+.about-section {
+    position: relative;
+    background: url('https://images.unsplash.com/photo-1505761671935-60b3a7427bad?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+    min-height: 100vh;
+    color: #fff;
+    padding: 100px 0;
+}
+
+.about-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 50, 50, 0.6);
+    z-index: 0;
+}
+
+/* Content */
+.about-content {
+    position: relative;
+    z-index: 1;
+    background-color: rgb(0 0 0 / 20%);
+    backdrop-filter: blur(5px);
+    border: none;
+    border-radius: 10px;
+    padding: 25px;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.about-content:hover {
+    transform: translateY(-5px);
+}
+
+.about-content h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 40px;
+}
+
+.about-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #d0e0e0;
+    text-align: justify;
+}
+
+/* Team Section */
+.team-section {
+    position: relative;
+    z-index: 1;
+    margin-top: 80px;
+}
+
+.team-title {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 40px;
+    text-align: right;
+    color: white;
+}
+
+.team-card {
+    background-color: rgb(0 0 0 / 20%);
+    backdrop-filter: blur(5px);
+    border: none;
+    border-radius: 10px;
+    padding: 25px;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+}
+
+.btn-role {
+    background-color: #293d9b;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 15px;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.contact-section {
+    position: relative;
+    background: url('https://images.unsplash.com/photo-1505761671935-60b3a7427bad?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+    min-height: 100vh;
+    color: #fff;
+    padding: 100px 0;
+}
+
+.contact-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 50, 50, 0.6);
+    z-index: 0;
+}
+
+.contact-container {
+    position: relative;
+    z-index: 1;
+}
+
+.contact-title {
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.contact-subtitle {
+    font-size: 1.2rem;
+    color: #c8e0df;
+    margin-bottom: 60px;
+}
+
+/* Contact Form */
+.contact-form {
+    background-color: rgb(0 0 0 / 20%);
+    backdrop-filter: blur(6px);
+    padding: 35px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin-left: auto;
+    color: white;
+}
+
+.contact-form .form-control {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    color: white;
+    border-radius: 5px;
+    padding: 12px;
+}
+
+.contact-form .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.btn-submit {
+    background-color: #0a7068;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    padding: 10px 28px;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.btn-submit:hover {
+    background-color: #0c9085;
+}
+
+/* Dropdown Results */
+.dropdown-results {
+    position: absolute;
+    top: 92%;
+    left: auto;
+    right: 30px;
+    color: #000;
+    z-index: 999;
+    overflow: hidden;
+    display: none;
+    width: 450px;
+}
+
+.dropdown-item {
+    border-bottom: 1px solid #eee;
+    border-radius: 10px;
+    background: #ffffff;
+    display: block;
+    align-items: center;
+    gap: 15px;
+    white-space: wrap;
+    margin-bottom: 10px;
+}
+
+.dropdown-item img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.dropdown-item:hover {
+    background: #f4f4f4;
+    cursor: pointer;
+}
+
+.destination-info {
+    padding: 10px 15px;
+}
+
+.destination-info h6 {
+    margin: 0 0 5px 0;
+    font-weight: 700;
+}
+
+.destination-info p {
+    font-size: 0.9rem;
+    color: #9c9b9b;
+    margin: 3px 0 5px 0;
+}
+
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-section {
+        padding: 0 40px;
+    }
+
+    .social-icons {
+        left: 20px;
+    }
+
+    .about-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .team-title {
+        text-align: center;
+    }
+
+    .contact-title {
+        font-size: 2.5rem;
+    }
+
+    .contact-form {
+        margin: 0 auto;
+    }
+
+    .dropdown-results {
+        width: 90%;
+        left: 5%;
+        right: 5%;
+        top: 100%;
+    }
+}
